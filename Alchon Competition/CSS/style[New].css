@@ -1,0 +1,25 @@
+button.new {
+  margin-top: 3%;
+  margin-left: 15%;
+  background-color: #08bd80;
+  border: 1px #08bd80 solid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+button.new:hover {
+  background-color: turquoise;
+}
+
+div.main_flex {
+  /* Put the height according to your need */
+  height: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+}

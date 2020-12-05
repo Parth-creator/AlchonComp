@@ -1,0 +1,264 @@
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bike {
+  transform: scale();
+  position: relative;
+  text-align: center;
+  transform: translate3d(650px, -350px, 0px);
+  width: 300px;
+  height: 500px;
+  z-index: -1;
+}
+
+div.heading p,
+button {
+  display: inline-block;
+}
+
+span.green {
+  color: #08bd80;
+  font-weight: 700;
+}
+
+p.heading {
+  color: #2d81f7;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+button.btn_green {
+  background-color: #08bd80;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #08bd80;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 10px 10px 10px 10px;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 700;
+}
+
+ul.nav {
+  list-style-type: none;
+}
+
+li.nav {
+  display: inline;
+}
+
+li button,
+p {
+  padding: 8px;
+}
+
+li button {
+  margin-top: 40px;
+  float: right;
+}
+
+p.tarif {
+  color: #3c4852;
+  font-size: 50px;
+  font-weight: 700;
+  padding-left: 50px;
+  bottom: 10px;
+}
+
+span.sub {
+  top: 100px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #9aafbf;
+}
+
+button.start {
+  background-color: #08bd80;
+  border: 1px solid #08bd80;
+  border-radius: 5px;
+  height: 50px;
+  width: 190px;
+  color: white;
+  margin-left: 50px;
+  font-size: large;
+  font-weight: 700;
+}
+
+#t {
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#s {
+  padding-left: 50px;
+  transform: translateX(-10000px);
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#subsub {
+  transform: translateX(-900px);
+  animation-delay: 0.5s;
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#subsubsub {
+  transform: translateX(-900px);
+  animation-delay: 0.5s;
+  animation-name: text;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.bike {
+  animation: main 1.5s ease-in-out;
+}
+
+#right_wheel,
+#left_wheel {
+  animation: wheel 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#main_body {
+  animation: bike 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hat {
+  animation: hat 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes hat {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(40%);
+  }
+}
+
+@keyframes main {
+  from {
+    transform: translate3d(-1000px, -400px, 0px);
+  }
+  to {
+    transform: translate3d(650px, -350px, 0px);
+  }
+}
+
+.subu {
+  font-size: 20px;
+  padding-left: 50px;
+  font-weight: 500;
+  color: #9aafbf;
+}
+
+button:hover {
+  background-color: turquoise;
+  transform: scale(2 3);
+}
+
+div.extras {
+  display: flex;
+  height: 1500px;
+
+  flex-wrap: wrap;
+}
+div.extra {
+  margin: 10px;
+  margin-top: 50px;
+  box-shadow: -1px -1px 10px 0px rgba(43, 43, 43, 0.75);
+  border-radius: 10px;
+  width: 400px;
+  background-color: rgb(255, 245, 225);
+  height: 35%;
+  text-align: center;
+}
+
+img.ei {
+  display: block;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 50%;
+}
+
+p.head {
+  font-weight: 500;
+  font-size: 20px;
+  color: #9aafbf;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #2d81f7;
+  color: white;
+}
+
+button.start a {
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  background: url("../EXTRAS/icon.png") no-repeat;
+  height: 50px;
+  width: 655px;
+  display: block;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+a#subsubsub {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  color: #9aafbf;
+}
