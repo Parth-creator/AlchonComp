@@ -1,16 +1,17 @@
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
-
+/* clone-24013.web.app */
 .bike {
   transform: scale();
   position: relative;
   text-align: center;
-  transform: translate3d(650px, -350px, 0px);
+  transform: translate3d(450px, -650px, 0px);
   width: 300px;
   height: 500px;
-  z-index: -1;
+  z-index: 1000;
 }
 
 div.heading p,
@@ -64,7 +65,7 @@ p.tarif {
   color: #3c4852;
   font-size: 50px;
   font-weight: 700;
-  padding-left: 50px;
+
   bottom: 10px;
 }
 
@@ -82,7 +83,6 @@ button.start {
   height: 50px;
   width: 190px;
   color: white;
-  margin-left: 50px;
   font-size: large;
   font-weight: 700;
 }
@@ -95,7 +95,6 @@ button.start {
 }
 
 #s {
-  padding-left: 50px;
   transform: translateX(-10000px);
   animation-name: text;
   animation-duration: 1.75s;
@@ -185,16 +184,15 @@ button.start {
 
 @keyframes main {
   from {
-    transform: translate3d(-1000px, -400px, 0px);
+    transform: translate3d(-1000px, -650px, 0px);
   }
   to {
-    transform: translate3d(650px, -350px, 0px);
+    transform: translate3d(450px, -650px, 0px);
   }
 }
 
 .subu {
   font-size: 20px;
-  padding-left: 50px;
   font-weight: 500;
   color: #9aafbf;
 }
@@ -211,7 +209,7 @@ div.extras {
   flex-wrap: wrap;
 }
 div.extra {
-  margin: 10px;
+  margin: 1em;
   margin-top: 50px;
   box-shadow: -1px -1px 10px 0px rgba(43, 43, 43, 0.75);
   border-radius: 10px;
@@ -231,16 +229,10 @@ img.ei {
 }
 
 p.head {
+  padding-top: 100px;
   font-weight: 500;
   font-size: 20px;
   color: #9aafbf;
-}
-
-.footer {
-  text-align: center;
-  padding: 3px;
-  background-color: #2d81f7;
-  color: white;
 }
 
 button.start a {
